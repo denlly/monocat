@@ -1,0 +1,66 @@
+{
+  "name": "monocat",
+  "version": "1.0.0",
+  "description": "一个被称为monocat的网站",
+  "main": "index.js",
+  "scripts": {
+    "debug": "node build/app.js",
+    "build": "rm -rf build && gulp && webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "betterScripts": {
+    "webpack:dev": {
+      "command": "webpack --progress --colors",
+      "env": {
+        "NODE_ENV": "dev"
+      }
+    },
+    "webpack:prod": {
+      "command": "webpack --progress --colors",
+      "env": {
+        "NODE_ENV": "prod"
+      }
+    }
+  },
+  "author": "Fanxd",
+  "license": "ISC",
+  "dependencies": {
+    "D": "^1.0.0",
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "co": "^4.6.0",
+    "cookie": "^0.3.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "deploy": "^1.0.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.1",
+    "html-webpack-plugin": "^3.1.0",
+    "koa": "^2.5.0",
+    "koa-body": "^2.5.0",
+    "koa-convert": "^1.2.0",
+    "koa-log4": "^2.3.0",
+    "koa-redis-pool": "^0.4.0",
+    "koa-session2": "^2.2.5",
+    "koa-simple-router": "^0.2.0",
+    "koa-static": "^4.0.2",
+    "koa-swig": "^2.2.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es": "^1.0.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.11",
+    "gulp-util": "^3.0.8",
+    "postcss-loader": "^2.1.3",
+    "style-loader": "^0.20.3",
+    "supervisor": "^0.12.0",
+    "webpack": "^4.2.0",
+    "webpack-cli": "^2.0.13"
+  }
+}

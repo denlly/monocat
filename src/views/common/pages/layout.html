@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- <title>Nightwatch.js | Node.js powered End-to-End testing framework</title> -->
+    <meta name="description" content="Write efficient and straightforward end-to-end tests in Node.js which run against a Selenium/WebDriver server.">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,200" rel="stylesheet" type="text/css">
+    <link rel="canonical" href="http://nightwatchjs.org/">
+    <meta property="og:title" content="Nightwatch.js">
+    <meta name="twitter:title" content="Nightwatch.js">
+    <meta name="twitter:description" content="Write efficient and straightforward end-to-end tests in Node.js which run against a Selenium/WebDriver server.">
+    <meta name="twitter:image" content="http://nightwatchjs.org/img/banner.png">
+    <meta property="og:image" content="http://nightwatchjs.org/img/banner.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@nightwatchjs">
+    <meta name="twitter:creator" content="@nightwatchjs">
+    <!-- <meta name="google-site-verification" content="LGNZ66nvi-gru5DR_bV3jry2hqvlMoijhdWZkVT41ZM"> -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="/assets/styles/main.css" rel="stylesheet">
+    <link href="/assets/styles/sidebar.css" rel="stylesheet">
+    <noscript>&lt;style&gt;#index-container {display: block}&lt;/style&gt;</noscript>
+    <link href="/assets/styles/themes/prism.css" rel="stylesheet"> {% block styles %} {% endblock %}
+</head>
+<body>
+    {% include "../../../widgets/header/header.html" %} 
+    {% block content %} {% endblock %} 
+    {% include "../../../widgets/footer/footer.html" %}
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> {% block script %} {% endblock %}
+</body>
+
+</html>
